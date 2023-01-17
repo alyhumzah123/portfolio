@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.background {
+  background-color: #0A192F
+}
+
+.color {
+  background-color: #62ecd04b;
+}
+
+.heights {
+  min-height: 150vh;
+}
+
+/* Main Container */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.show {
+  visibility: visible;
+  transition: 2s ease;
+}
+
+.clip {
+  height: 7vh;
+  width: 60px;
+  border: 5px solid white;
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+
+.clips {
+  height: 7vh;
+  width: 60px;
+  border: 5px solid #0A192F;
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+
+.g1 {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 47%, 83% 76%, 61% 84%, 33% 81%, 0 91%);
+}
+
+.bor {
+  border-radius: 100px;
+}
+
+.w1{
+  width: 80%
+}
+.w2{
+  width: 85%
+}
+.w3{
+  width: 90%
+}
+.w4{
+  width: 95%
+}
+.trans{
+  transition: 5s linear;
+}
+
+
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
